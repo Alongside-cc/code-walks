@@ -4,33 +4,7 @@
 Exit #Prevent F5. Instead, place cursor on any line and step thru command with F8
 
 
-#region SETUP
-# get settings & secrets
-. ./_my.secrets.ps1
-. ./_my.settings.ps1
-$MySettings
 
-#endregion
-
-#region LOGIN
-
-# LOGIN TO YOUR AZURE ACCOUNT (DEV, NOT PROD JUST YET :) ) 
-# FOR GITPOD, USE Connect-AzAccount -UseDeviceAuthentication
-# With Device auth
-Connect-AzAccount -UseDeviceAuthentication
-
-<# displays
-WARNING: To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code xxxxxxx to authenticate.
-#>
-
-<# after login, this displays
-Account            SubscriptionName TenantId                             Environment
--------            ---------------- --------                             -----------
-my@email.com                  guid-here                            AzureCloud
-#>
-
-
-#endregion
 
 #region ASSESS AZ.ACCOUNTS MODULE
 

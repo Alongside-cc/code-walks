@@ -26,7 +26,7 @@ Get-Command -Noun AzVMss
 Get-Command -Noun AzVM
 
 # Look at examples for New-AzVM
-Get-Help New-AzVM Examples
+Get-Help New-AzVM -Examples
 
 
 # VMs have the following dependencies, we could create or reference these
