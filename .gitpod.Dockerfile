@@ -19,9 +19,9 @@ ARG VCS_REF="none"
 ARG BUILD_DATE=
 # refer https://hub.docker.com/_/microsoft-azure-powershell
 ARG VERSION=7.4.0  
-ARG IMAGE_NAME=mcr.microsoft.com/azure-powershell:${VERSION}-ubuntu-18.04
-
-ENV AZUREPS_HOST_ENVIRONMENT="dockerImage/${VERSION}-ubuntu-18.04"
+#ARG IMAGE_NAME=mcr.microsoft.com/azure-powershell:${VERSION}-ubuntu-18.04
+ARG IMAGE_NAME mcr.microsoft.com/azure-powershell:ubuntu-22.04
+ENV AZUREPS_HOST_ENVIRONMENT="dockerImage/${VERSION}-ubuntu-22.04"
 
 # install azure-powershell from PSGallery
 RUN pwsh -Command Set-PSRepository -Name ${REPOSITORY} -InstallationPolicy Trusted && \
