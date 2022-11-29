@@ -28,6 +28,7 @@ Connect-AzAccount -UseDeviceAuthentication
 <# displays
 WARNING: To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code xxxxxxx to authenticate.
 #>
+# add description here
 
 <# after login, this displays
 Account            SubscriptionName TenantId                             Environment
